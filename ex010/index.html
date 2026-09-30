@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>Imagens dinamica</h1>
+    <p>abra este site em varios lugares ou so diminua o tamanho da tela</p>
+
+    <picture> <!-- picture é pra indicar que se mexe com imagens-->
+        <source media="(max-width: 750px )" srcset="Imagens/images.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto_do_wallpaper.png" type="image/png">
+        <img src="Imagens/ixi.png" alt="LA ele">
+    </picture>
+
+</body>
+</html>

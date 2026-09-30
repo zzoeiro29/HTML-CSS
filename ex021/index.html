@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /* como criar fonte com @fonte-face*/
+        @font-face {
+            font-family: "Undertalekkk";
+            src: url("fonts/upheavtt.ttf") format('truetype');
+
+            /* tipos de format()
+            Atençao: ha navegadores que podem nao ser comaptiveis com alguns destes tipos
+            - opentype (otf) mais usados
+            - truetype (ttf) mais usados
+            - embede-opentype
+            - truetype-aat (Apple advanced typography)
+            - svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Undertalekkk', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Undertale</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate obcaecati maxime enim repellat? Cum earum veniam repellat excepturi, quas impedit? Perferendis, atque asperiores corporis in aut et ullam laborum.</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /* box level  */
+            /*display: inline;   como por inline com display */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /* 
+            border-width: 10px; largura da borda 
+            border-style: solid;
+            border-color: darkgreen; cor da borda  
+            shorthand para border
+            */
+            border: 10px solid darkslategray;
+
+            /* padding é o espaço que fica entre a borda e o texto  */
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            shorthand para padding
+            */
+            /*padding: 10px 10px 10px 10px;  em ordem: top, right, bottom, left */
+            /* se os padding forem todos iguais da pra por so 1 pra todos */
+            padding: 10px 20px;
+
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; 
+            shorhand para margin
+            auto calcula automaticamente as margens da direita e da esquerda neste caso
+            */
+            margin: 20px auto 40px auto;
+
+            /*margin: auto;  para deixar a caixa no centro  */
+
+            /* outline é o trasejado em torno da margem que esta dentro da margem  
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            shorthand de outline
+            */
+            outline: 5px dashed salmon;
+
+            
+
+        }
+        a{ /* inline level */
+            /* display: block; como por em box level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplo de box-level, mas os <a href="A"> linkas sao exempls de caixas inline-level</a>. vamos ver como tudo isso funciona</p>
+</body>
+</html>

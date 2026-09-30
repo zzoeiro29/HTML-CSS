@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+            min-width: 320px; /*  largura minima */
+            max-width: 800px; /*  largura maxima */
+            margin: auto;
+        }
+
+        img{
+            width: 100%; /* primeira forma de resolver */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae excepturi rem, fugiat dicta voluptates saepe nam omnis vel odio necessitatibus placeat facere qui debitis quae, sint reprehenderit magnam quos cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, doloremque recusandae? Necessitatibus accusantium quaerat assumenda perspiciatis! Labore vero mollitia quam sequi, unde nam assumenda at maxime magni dolorem nulla rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perferendis itaque dignissimos animi illo, hic molestias id obcaecati eos, earum provident, illum totam! Libero voluptate maxime mollitia officia, exercitationem a.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">  <!-- segunda forma de resolver -->
+            <img src="imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dicta! Quos dolorem minima non, maxime aut velit, eos corrupti est autem error ipsam iure sapiente molestiae quis? Sequi, quasi ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, hic cupiditate nam ab illum fuga cum, minima corrupti, eaque eius debitis. Dolorum tempore blanditiis officiis. Velit dicta illum ullam pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem unde reiciendis beatae ullam vero fugiat, assumenda quos in labore velit sed maiores facere laboriosam expedita soluta reprehenderit facilis! At, impedit?</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+    <h1>Inserindo videos</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <!-- poster é pra thumb do video-->
+    <video width="560" poster="Video/sonic.png" controls>
+        <!-- pode por outros formatos sem ser mp4 ou ogv pra outros navegadores (embora o mp4 ja seja o suficiente)-->
+        <source src="Video/Nuno vs ovo.mp4" type="video/mp4">
+        <source src="Video/Nuno-vs-ovo.ogv" type="video/ogv">
+        <p>Seu navegador é uma merda pq n é possivel cara</p>
+    </video>
+
+    <h1>Inserindo videos no youtube</h1> <!-- videos externos -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2kGp3bXjxI?si=F6_Gs24wXTP7iZ9S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

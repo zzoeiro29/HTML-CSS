@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        h1{
+            box-shadow: 2px 1px 14px 6px rgb(0, 0, 0,5);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* shorthand para configurar as 4 bordas */
+            border-radius: 10px;  /* borda arredondada */
+            box-shadow: 4px 4px 6px 0px black;;
+        }
+
+        nav{
+            background-color: grey; 
+            padding: 3px;
+            /* box-shadow é pra sombra ha box; 1px vertical, 1px horizontal, 1px opacidade cor */
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: rgb(182, 178, 178);
+            padding: 5px;
+        }
+
+        article > #aside{
+            background-color: rgb(150, 153, 153);
+            padding: 2px;
+        }
+        
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        /*
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }*/
+
+    </style>
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- navegaçao -->
+        <nav>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+        </nav>
+    </header>
+    <!-- conteudo principal -->
+    <main>
+        <section id="assuntos"> <!-- seçoes -->
+            <p>Os guri e fds</p>
+        </section>
+        <section id="noticias">
+            <article> <!-- artigo -->
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptates, libero aperiam quisquam aspernatur non, unde asperiores illo modi commodi nulla laboriosam voluptas cumque ex dicta officia id alias labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor consectetur est placeat quod expedita, quas neque cupiditate dignissimos at sequi, dicta explicabo omnis earum ipsam similique et quae suscipit.</p>
+            </article>
+            <article>
+                <p id="aside">Artigo escrito por joze da silva</p>
+            </article>
+        </section>
+    </main>
+    <!-- rodape -->
+    <footer>
+        <p>Desenvolvido por os guri</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

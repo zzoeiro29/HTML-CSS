@@ -1,0 +1,43 @@
+@charset "Utf-8";
+
+/*
+em html é id    = em css é # (so pode ter um elemento)
+id é unico nao pode ter um repetido
+em html é class = em css é . (pode varios elementos)
+class pode ter um ou mais seletores a usar essa classe
+*/
+body{
+    background-color: rgb(173, 221, 173);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(34, 75, 34);
+}
+
+h1#principal{ /* id # */
+    text-align: center;
+    background-color: rgb(54, 99, 56);
+    color: white;
+}
+h2{
+    color: rgb(41, 63, 44);
+}
+
+.basico{ /* class . */
+    color: green;
+    font-weight: bold;
+}
+
+.Intermediario{
+    color: rgb(172, 180, 61);
+}
+
+.avancado{
+    color: rgb(155, 57, 57);
+}
+
+.destaque{
+    background-color: rgba(223, 223, 52, 0.473);
+}
+

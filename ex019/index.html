@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body{
+            /*font-family: Arial, Arial, Helvetica, sans-serif;  font-family: vai dizer o tipo da fonte; se a arial que é a primeira nao der, o site pula para a proxima que no caso é a helvetica*/
+            /* a sans-serif (sem serifa) da pra todos os despositivos*/
+            font-family: 'work sans', Arial, Helvetica, sans-serif;
+            font-size: 1em; /* fonte-size: é o tamanho da fonte
+            /* 
+            Medidas absolutas 
+            cm, mm, in, px, pt, pc
+
+            cm: centimetros
+            mm: milímetros
+            in: polegadas
+            px: pixeis (recomendado)
+            pt: ponto
+            pc: picas
+
+            16 px geralmente = 1em
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            em: tamanho da fonte do elemento (recomendado)
+            ex: altura da letra x
+            rem: tamanho da fonte do elemento da font family
+            vm: 1% da largura da janela
+            vh: 1% da altura da janela
+            %: percentagem do elemento de referência
+            */
+            font-weight: lighter;
+            /* 
+            - weight é peso
+            - width é largura
+            - height é altura
+            */
+
+             /* pesos de fonte:
+             - litgher é leve
+             - normal é normal 
+             - bold é negrito
+             - bolder é mais negrito
+             */ 
+            font-style: italic; /* estilo ex: italico*/
+            text-decoration: underline; /*  deixa sublinhado */
+            
+
+            /* nota: crl + espaço da pra ver as opçoes */
+
+        }
+        h1{
+            /*
+            font-family: 'work sans', sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /* shorhand font
+            mais pratico:
+            ordem importante pro shorthand!
+            - font-style -> font-weight -> font-size -> font-family
+            
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+
+        }
+        h2{
+            font: bold 2em 'work sans';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime suscipit, ullam, odit provident at asperiores natus non fugiat quam est sunt sapiente, blanditiis exercitationem officia sit quidem eveniet necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nemo quisquam amet facere, ab laudantium itaque deleniti dolores ducimus optio doloremque? Omnis labore quod nam accusamus error quia consectetur earum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem enim similique vero quis perferendis commodi repellendus vel nam quasi deleniti expedita, omnis explicabo eveniet inventore! Consequatur sunt illum eos?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate temporibus soluta error vero illum nisi. Corporis a aliquam pariatur. Quidem pariatur incidunt enim. Labore officiis asperiores voluptate neque unde omnis!</p>
+</body>
+</html>

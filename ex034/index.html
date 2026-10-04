@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
+            /* 
             background-color: black;
             background-image: url("../ex029/imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /* cover é cobrir, ocupa 100% da view port */
             /* contain */
+            /* background-attachment: fixed; fundo fixado */ 
+
+            /* shorthand - background
+                color > image > position > repeat > [size funciona mas gunagoat n explicou] > attachment
+    
+            */
+            /* shorthand */
+            background:  black url("../ex029/imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
+            
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +39,12 @@
     <main>
         <h1>Teste</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum excepturi mollitia vel eius! Eaque sunt nihil distinctio perferendis libero cum ipsum aliquid harum. Suscipit dolores aliquam distinctio architecto voluptatibus minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem asperiores ad aliquid corporis dolores voluptas aperiam, odio laboriosam quae sit, rem nisi exercitationem incidunt magni dolorum unde culpa iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsum autem unde natus ratione sequi tempora qui facilis et eum dicta iste porro laborum voluptates quidem vel a quo illum! </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quam dicta aliquid quia eveniet ipsa numquam sequi at quas recusandae maxime beatae neque consequuntur voluptates perferendis reiciendis, minus dignissimos repellendus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore, ipsum laborum vitae unde accusantium vero quia maiores autem. Dolor illum eius ipsum sapiente error inventore quibusdam ipsa aperiam voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident atque cum, fugit, minima veniam sint natus voluptas repellendus doloremque accusamus itaque. Pariatur, consectetur! Ducimus fuga tempora numquam doloremque illo?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aut nemo ipsa quisquam molestiae debitis eum nihil quis voluptates odit vero, delectus autem illum. Aut nemo enim vel obcaecati iusto.
+        Beatae, modi animi ullam quisquam voluptatum velit exercitationem error saepe fuga adipisci fugit non dolor, explicabo a doloribus ipsam dicta quia repudiandae magnam id numquam fugiat consequuntur. Rerum, quidem veniam.
+        Nihil in nisi sit dignissimos fugit explicabo atque dolor quasi non quaerat, nulla assumenda magnam numquam minima dolore natus pariatur corporis possimus, quidem consequatur, commodi exercitationem officiis eum! Quae, itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores iusto, illum et soluta corrupti, dolorum aliquam quia ipsa vero obcaecati eos, repellendus eum blanditiis quas. Vitae alias ab quaerat odit.
+        Minus, laudantium? Totam itaque beatae praesentium non voluptate aliquam quod esse eos neque veniam explicabo provident molestiae voluptates, impedit recusandae reiciendis quisquam magni deleniti! Error nam est illo hic porro.
+        Esse ad alias ipsam culpa laboriosam dolores deleniti, accusamus impedit? Accusamus maiores quisquam illo quam exercitationem neque quae molestiae odio adipisci delectus corrupti expedita quaerat, perferendis molestias magni, natus nesciunt.</p>
     </main>
 </body>
 </html>

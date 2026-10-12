@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        td, th{
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+        tbody > tr:nth-child(even){ /* nth-child(xn) efeito zebrado vai pular de x em n numeros ex: 2*; curiosidade: odd é impar e even é par em ingles*/
+            background-color: lightgray;
+        }
+        div#container{
+            overflow-x: auto; /* cria um scroll no eixo x ou seja deitado */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum pariatur adipisci aspernatur cum, necessitatibus, asperiores distinctio earum sed vero reiciendis rem vel. Rem exercitationem assumenda, id optio sit possimus laborum?</p>
+    <div id="container">
+        <table>
+            <caption> Tabelas responsivas</caption>
+            <thead>
+            <tr>
+                <th>Proudto</th>
+                <th>jan</th>
+                <th>fev</th>
+                <th>marc</th>
+                <th>abr</th>
+                <th>mai</th>
+                <th>jun</th>
+                <th>jul</th>
+                <th>ago</th>
+                <th>set</th>
+                <th>out</th>
+                <th>nov</th>
+                <th>dez</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TV 40"</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>Home Theater</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy S20</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>iPad Mini</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>PlayStation 4</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>Lava louças</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+            <tr>
+                <td>Amazon Echo</td>
+                <td>01</td><td>04</td><td>07</td><td>12</td>
+                <td>12</td><td>10</td><td>05</td><td>02</td>
+                <td>01</td><td>01</td><td>04</td><td>16</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>

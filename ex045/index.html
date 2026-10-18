@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!-- formulario simples-->
+         <!-- label serve pra criar uma ligaçao com o input-->
+        <p> <label for="inome">Nome: </label> <!-- for é para quem, normalmente é sempre para o id do input-->
+            <input type="text" name="nome" id="inome"></p> <!-- input faz a caxinha; type é o tipo;  name é usado para o php e html e o id é mais usado no javascript e para labels -->
+        <p> <label for="isobrenome">Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="enviar"> <!-- type submit é pra criar um botao pra subemeter-->
+    </form>
+</body>
+</html>

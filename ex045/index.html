@@ -12,7 +12,14 @@
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!-- method get = é o padrao, ficam na url
+     quando usar: quando os dados nao forem sensiveis ou seja nao sejam pessoais (ate 3000 bytes ou 3000 letras)
+    -->
+    <!-- method post = é mais seguro que o get mas nao é 100% de segurança
+     quando usar: quando os dados forem sensiveis ou sejam mais pessoais
+     https é um protocolo de segurança
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!-- formulario simples-->
          <!-- label serve pra criar uma ligaçao com o input-->
         <p> <label for="inome">Nome: </label> <!-- for é para quem, normalmente é sempre para o id do input-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Tste de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" maxlength="30" placeholder="nome completo" autocomplete="name" required >
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <!-- min é o minimo para numeros-->
+            <!-- min é o minimo para numeros-->
+            <!-- set é passo, neste caso vai mudar 0.5 em 0.5 para as notas-->
+            <!-- value remove o placeholder -->
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required> <!-- type number so aceita numeros-->
+        </p>
+        <p>
+            <label for="iperiodo">periodo letivo</label>
+            <!-- value deixa o algo ja prenchido-->
+            <input type="month" name="month" id="iperiodo" value="2020-07"> <!-- type month cria um campo que mostra o mes e o ano -->
+        </p>
+        <p>
+            <label for="idia">dia da prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-14"> <!-- type date cria um campo que mostra a data-->
+        </p>
+        <p>
+            <label for="iprova">Hora prova</label>
+            <input type="time" name="tempo" id="iprova"> <!-- type hora cria um campo que mostra a hora-->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

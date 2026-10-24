@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iestado">Estado</label> 
+            <select name="estado" id="iestado"> <!-- a tag select faz meio que uma aba ou lista para selecionar opçoes-->
+                
+                <option value="" selected>-- Escolha ---</option> <!-- selected faz com que ele ja venha selecionado como padrao-->
+                <optgroup label="Regiao Sudeste"> <!-- poe as opcoes em um grupo (da pra usar um label no optgroup) e faz meio q um titulo para as opcoes-->
+                    <option value="sp">Sao paulo</option> <!-- a tag option faz uma opcao que vai ser selecionada ou nao-->
+                    <option value="rj">Rio de janeiro</option>
+                    <option value="mg ">Minas gerais</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="rn">Rio grande do norte</option>
+                    <option value="P">Pernambuco</option>
+                    <option value="Rn"> Rio grande do norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof"> <!-- list=" é como se fosse o id do datalist para o input"-->
+            <datalist id="lstprof"> <!-- faz uma lista de susgestoes (nao é obrigatorio escrever as sugestoes) que é diferente do select-->
+                <option value="ADM">Admistrador</option>
+                <option value="CONT">Contabelista</option>
+                <option value="DEV">desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10">é os guri?</textarea> <!-- a tag textarea faz uma area para escrever um texto-->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

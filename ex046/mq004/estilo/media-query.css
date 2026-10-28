@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* O resto das media */
+
+
+/* pesquisar sobre typical device breakpoints 
+
+pequenas telas: ate 600px
+Celular : de 600px ate 768px
+Tablet: 768px ate 992px
+pc: 992px ate 1200px
+grandes telas: acima de 1200px
+
+*/
+
+ 
+/* versao atualizada
+  Breakpoints típicos (abordagem mobile-first, usando min-width)
+  Valores alinhados com o Tailwind CSS (o Bootstrap 5 usa 576/768/992/1200/1400)
+
+  Telemóveis (base):        até 639px     (sem media query)
+  Telemóveis grandes:       a partir de 640px
+  Tablets:                  a partir de 768px
+  Portáteis / PC pequeno:   a partir de 1024px
+  PC / Desktop:             a partir de 1280px
+  Ecrãs grandes:            a partir de 1536px
+
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url("../imagens/cev-portrait.jpg"); /* desnecessario */
+    }
+
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: "Esta impressao, pegou no meu pau";
+        text-decoration: overline;
+    }
+
+    img#tele{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display:  block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+/* o site esta a ser feito com mobile first ou seja o mobile ja foi feito
+Telemovel:
+    @media screen and (max-width: 600px){
+        
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 768){
+        
+    }
+*/
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url("../imagens/back-phone.jpg");
+        
+    }
+    img#tele{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display:  none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+/*  PC */
+@media screen and (min-width: 992px) and (max-width: 1536px){
+    body{
+        background-image: url("../imagens/icon-phone.png");
+    }
+
+    img#tele{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display:  none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+    
+}
+/*  Telas grandes */
+@media screen and (min-width: 1536px){
+    body{
+        background-image: url("../imagens/pngtree-d-rendering-of-a-simple-living-room-with-wooden-tv-stand-image_3710245.jpg");
+    }
+    img#tele{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display:  none;}
+    img#pc{ display: none;}
+    img#tv{ display: block;}
+
+    main{
+        width: 700px;
+    }
+}

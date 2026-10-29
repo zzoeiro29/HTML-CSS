@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+/* versao atualizada
+  Breakpoints típicos (abordagem mobile-first, usando min-width)
+  Valores alinhados com o Tailwind CSS (o Bootstrap 5 usa 576/768/992/1200/1400)
+
+  Telemóveis (base):        até 639px     (sem media query)
+  Telemóveis grandes:       a partir de 640px
+  Tablets:                  a partir de 768px
+  Portáteis / PC pequeno:   a partir de 1024px
+  PC / Desktop:             a partir de 1280px
+  Ecrãs grandes:            a partir de 1536px
+
+*/
+
+@media screen and (min-width:760px){ /* a partir do tablet */
+    span#burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+}

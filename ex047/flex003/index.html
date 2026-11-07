@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            height: 100px;
+            /* flex-flow é um shorthand do flex-direction e do flex-wrap */
+            flex-flow: column wrap;
+            display: flex; /* diplay flex: é pra fazer flex box */
+           /* flex-direction: row-reverse;  a direçao onde o container esta a ir */
+           /* flex-wrap: nowrap;  no wrap nao quebra o container, mas puxa o que nao cabe pra baixo*/
+            /* wrap quebra o container, mas puxa o que nao cabe pra baixo*/
+            /* wrap-reverse nao quebra o container,  mas puxa o que nao cabe pra cima*/
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* flex auto so funciona no filho e tbm é um shorthand, tbm nao permite ngm espaço branco no conteiner */
+        }
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item">Exemplo: A</div> <!-- item sao os filhos -->
+        <div class="item">Exemplo: B</div>
+        <div class="item">Exemplo: C</div>
+        <div class="item">Exemplo: D</div>
+        <div class="item">Exemplo: E</div>
+        <div class="item">Exemplo: F</div>
+        <div class="item">Exemplo: G</div>
+    </div>
+</body>
+</html>

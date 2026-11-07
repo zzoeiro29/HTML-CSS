@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            /* flex-flow é um shorthand do flex-direction e do flex-wrap */
+            height: 300px; /* para o colum é presiso defenir uma altura */
+            flex-flow: row nowrap;
+            display: flex;
+            justify-content: space-around;
+            /* justify-content  pro main-axis (eixo principal)
+            - justify-content : flex-star alinha ao eixo da esquerda (dependo do flex-direction)
+            - justify-content : flex-end  alinha ao eixo da direita
+            - justify-content: center deixa centralizado
+                justify-content: space
+                - justify-content: space-between calcula o espaço entre os eixos pondo um no incio e outro no fim
+                - justify-content: space-evenly deixa o espaço entre os filhos iguais
+                - justify-content: space-around parecido com evenly muda um pouco o posicionamento
+            */
+           align-items: center;
+           /* align-items pro cross-axis (eixo transversal)
+            - align-items: stretch padrao; ocupa o o espaço de cada o cross-axis
+            - align-items: flex-start cola em cima do conteiner no star do cross-axis
+            - align-items: flex-end cola em baixo do conteiner no end do cross-axis
+            - align-items: center deixa no centro do cross-axis
+           */
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item">Exemplo: A</div> <!-- item sao os filhos -->
+        <div class="item">Exemplo: B</div>
+        <div class="item">Exemplo: C</div>
+        <div class="item">Exemplo: D</div>
+        <div class="item">Exemplo: E</div>
+        <div class="item">Exemplo: F</div>
+        <div class="item">Exemplo: G</div>
+    </div>
+</body>
+</html>

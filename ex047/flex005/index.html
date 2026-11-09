@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightsalmon;
+        }
+
+        main{
+            background-color: lightgreen;
+            height: 300px;
+            width: 100vw;
+
+            display: flex; /* para começar a alterar a flexbox */
+            flex-flow: row nowrap; /* shorthand*/
+            align-items: center; /* centraliza os itens */
+            justify-content: center;  /* centraliza o conteiner q neste caso é o main */
+            
+        }
+
+        section{
+            background-color: lightgrey;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+   <main>
+        <section>
+            <h1>Tela de login</h1>
+        </section>
+   </main>
+</body>
+</html>

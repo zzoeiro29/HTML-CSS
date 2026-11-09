@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            height: 400px;
+            display: flex; /* diplay flex: é pra fazer flex box */
+            flex-flow: row wrap;
+            align-content: space-around;
+            /* aling-content 
+            - align-content: flex-start; sempre colado na parte de cima
+            - align-content: stretch; padrao ele vai tar sempre a grupar a alutra padrao
+            - align-content: flex-end; sempre colado na parte de baixo
+            - align-content: center; deixa no centro
+            aling-content: space-...
+                - align-content: space-between; vai por no meio e vai calcular os espaços entre o meio
+                - align-content: space-evenly; deixa todos os espaços divididos iguais
+                - align-content: space-around; fica mais grudaddo em cima e em baixo mas no meio fica com mais espaço
+                
+            
+            */
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item">Exemplo: A</div> <!-- item sao os filhos -->
+        <div class="item">Exemplo: B</div>
+        <div class="item">Exemplo: C</div>
+        <div class="item">Exemplo: D</div>
+        <div class="item">Exemplo: E</div>
+        <div class="item">Exemplo: F</div>
+        <div class="item">Exemplo: G</div>
+        <div class="item">Exemplo: H</div>
+        <div class="item">Exemplo: I</div>
+        <div class="item">Exemplo: K</div>
+        <div class="item">Exemplo: L</div>
+    </div>
 </body>
 </html>

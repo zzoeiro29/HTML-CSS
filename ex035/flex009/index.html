@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            display: flex; /* diplay flex: é pra fazer flex box */
+            background-color: lightcoral;
+            flex-flow: row nowrap;
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            /*  flex-basis: auto; flex-basis: auto; padrao; adapta se ao tamanho do conteudo do item */
+            flex-basis: 150px; /*  flex-basis: 150px; faz com que o item tenha 150px; nao é uma medida certa se nao cober nao vai ser 150px*/
+        }
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">COnteudo maior que o maior do maior</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

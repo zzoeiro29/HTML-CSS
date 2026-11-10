@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            display: flex; /* diplay flex: é pra fazer flex box */
+            flex-flow: row wrap;
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        div#i1{
+            order: 0; /* order: ordena por ordem crescente de numeros (incluindo negativos) */
+        }
+
+        div#i2{
+            order: -2;
+        }
+
+        div#i3{
+            order: 4;
+        }
+
+        div#i4{
+            order: 8;
+        }
+
+        div#i5{
+            order: 2;
+        }
+
+        div#i6{
+           order: 0; 
+        }
+
+        div#i7{
+           order: -4; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item" id="i1">Exemplo: A</div> <!-- item sao os filhos -->
+        <div class="item" id="i2">Exemplo: B</div>
+        <div class="item" id="i3">Exemplo: C</div>
+        <div class="item" id="i4">Exemplo: D</div> 
+        <div class="item" id="i5">Exemplo: E</div>
+        <div class="item" id="i6">Exemplo: F</div>
+        <div class="item" id="i7">Exemplo: G</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            display: flex; /* diplay flex: é pra fazer flex box */
+            flex-flow: row wrap;
+            align-items: flex-start; /* o padrao do aling items é stretch */
+            height: 400px;
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        div#i2{
+            align-self: auto; /* align-self: auto; herda do pai o align-self; padrao*/
+        }
+
+        div#i3{
+            align-self: flex-end; /* align-self: flex-end; significa q so o c deste caso é q vai pra baixo */
+        }
+
+        div#i5{
+           align-self: center; /* align-self: center; significa q so o e deste caso é q vai para o centro do conteiner */
+        }
+
+        div#i6{
+            align-self: flex-start;
+        }
+
+        div#i7{
+           align-self: stretch; /* align-self: stretch; significa q so o g deste caso é q vai ficar esticado */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item" id="i1">Exemplo: A</div> <!-- item sao os filhos -->
+        <div class="item" id="i2">Exemplo: B</div>
+        <div class="item" id="i3">Exemplo: C</div>
+        <div class="item" id="i4">Exemplo: D</div> 
+        <div class="item" id="i5">Exemplo: E</div>
+        <div class="item" id="i6">Exemplo: F</div>
+        <div class="item" id="i7">Exemplo: G</div>
+    </div>
+</body>
+</html>

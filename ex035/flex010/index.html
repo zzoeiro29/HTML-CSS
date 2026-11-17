@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            display: flex; /* diplay flex: é pra fazer flex box */
+            background-color: lightcoral;
+            flex-flow: row nowrap;
+
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* tamanho dos itens */
+            flex-shrink: 1; /* padrao é 1; deixa os itens diminuirem */
+            /*flex-shrink: 0;  padrao é 0; nao deixa os itens diminuirem */
+            flex-grow: 0; /* padrao é 0; ele nao deixa os itens aumentarem */
+            /* flex-grow: 1; padrao é 1; ele deixa os itens aumentarem */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

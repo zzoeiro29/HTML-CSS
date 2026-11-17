@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .conteiner{
+            display: flex; /* diplay flex: é pra fazer flex box */
+            background-color: lightcoral;
+            flex-flow: row nowrap;
+
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* tamanho dos itens */
+            flex-shrink: 1; /* padrao é 1; deixa os itens diminuirem */
+            /*flex-shrink: 0;  padrao é 0; nao deixa os itens diminuirem */
+            flex-grow: 0; /* padrao é 0; ele nao deixa os itens aumentarem */
+            /* flex-grow: 1; padrao é 1; ele deixa os itens aumentarem */
+
+        }
+            
+        #cxA{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+         #cxB{
+            flex-shrink: 1;
+            /*flex-grow: 2;  mais de 1 significa que ele vai crescer x vezes(neste caso 2 vezes) multiplicando com ultimo 1*/
+            flex-grow: 1;
+        }
+
+         #cxC{
+            flex-shrink: 8; /* contrario do grow;  mais de 1 significa que ele vai descer x vezes(neste caso 2 vezes) dividindo com ultimo 1*/
+            /*flex-grow: 4;  vai crescer duas vezes mais do que o cxB */
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- conteiner é o pai-->
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
